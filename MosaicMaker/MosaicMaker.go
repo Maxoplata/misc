@@ -30,15 +30,15 @@ import (
 )
 
 func main() {
-	var error string = ""
+	error := ""
 
-	if (len(os.Args) != 4) {
+	if len(os.Args) != 4 {
 		error = "Invalid argument count"
 	} else {
 		// vars
 		tileSize, _ := strconv.Atoi(os.Args[1])
-		var inputFile string = os.Args[2]
-		var outputFile string = os.Args[3]
+		inputFile := os.Args[2]
+		outputFile := os.Args[3]
 
 		// validate the tile size
 		if error == "" {
@@ -90,8 +90,8 @@ func main() {
 
 		if error == "" {
 			// get width/height of image
-			var widthOrig int = imgOrig.Bounds().Size().X
-			var heightOrig int = imgOrig.Bounds().Size().Y
+			widthOrig := imgOrig.Bounds().Size().X
+			heightOrig := imgOrig.Bounds().Size().Y
 
 			// create tile of image
 			imgOrigResized := resize.Resize(uint(tileSize), uint(tileSize), imgOrig, resize.Lanczos3)
@@ -126,7 +126,7 @@ func main() {
 		}
 	}
 
-	if (error != "") {
+	if error != "" {
 		fmt.Println(error)
 	}
 }
