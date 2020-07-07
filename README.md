@@ -16,6 +16,6 @@ A tool to convert a string to Brainfuck code output.
 * https://esolangs.org/wiki/Brainfuck
 
 ### StringToINTERCAL
-A tool to convert a string to Brainfuck code output.
+A tool to convert a string to INTERCAL code output.
 * https://en.wikipedia.org/wiki/INTERCAL
 * https://esolangs.org/wiki/INTERCAL
