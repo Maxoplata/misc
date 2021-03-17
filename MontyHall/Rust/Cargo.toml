@@ -1,0 +1,11 @@
+[package]
+name = "monty_hall"
+version = "1.0.0"
+authors = ["Maxamilian Demian <max@maxdemian.com>"]
+edition = "2018"
+description = "Example Monty Hall problem simulation."
+homepage = "https://www.maxodev.org/"
+repository = "https://github.com/Maxoplata/misc"
+
+[dependencies]
+rand = "0.8.0"
