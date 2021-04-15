@@ -35,7 +35,7 @@ import * as Jimp from 'jimp';
 		let imgOrig: Jimp;
 
 		if (!error) {
-			await Jimp.read(inputFile).then(async img => {
+			await Jimp.read(inputFile).then(img => {
 				imgOrig = img;
 			}).catch(err => {
 				error = 'Invalid image';
