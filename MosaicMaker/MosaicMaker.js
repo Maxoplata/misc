@@ -75,6 +75,6 @@ const Jimp = require('jimp');
 		// output image
 		imgNew.write(outputFile);
 	} catch (error) {
-		throw new Error(`Failed to create Mosaic: ${error}`)
+		throw new Error(`Failed to create Mosaic: ${error}`);
 	}
 })();
