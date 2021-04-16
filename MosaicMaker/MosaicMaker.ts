@@ -74,6 +74,6 @@ import * as Jimp from 'jimp';
 		// output image
 		await imgNew.write(outputFile);
 	} catch (error) {
-		throw new Error(`Failed to create Mosaic: ${error}`)
+		throw new Error(`Failed to create Mosaic: ${error}`);
 	}
 })();
