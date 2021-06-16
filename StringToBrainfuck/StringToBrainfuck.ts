@@ -56,7 +56,7 @@ if (process.argv.length > 2) {
 		} else {
 			// delete the "<" from the previous command as we are on the same character
 			// and we will want to print it out again
-			bfCode = bfCode.slice(0, 1);
+			bfCode = bfCode.slice(0, -1);
 		}
 
 		// print out the current character
